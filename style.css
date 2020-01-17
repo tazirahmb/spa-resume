@@ -1,93 +1,68 @@
 .resume {
-    
-    /* Development Purpose Only */
-    width: 210mm;
-    height: 297mm;
+  /* Development Purpose Only */
+  width: 210mm;
+  height: 297mm;
+  border: 1px solid black;
+  /* Development Purpose Only */
+  display: grid;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "photo name" "work about" "work education" "community skills";
+  /* grid-template-columns: 1fr;
+  grid-gap: 5px; /* ngasih jarak antar kotak /
+  grid-template-areas: 
+  "photo"
+  "name"
+  "about"
+  "work"
+  "education"
+  "community"
+  "skills"; */ }
+  .resume section {
     border: 1px solid black;
-    /* Development Purpose Only */
-
-    display: grid;
-    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-    grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "photo name"
-        "work about"
-        "work education"
-        "community skills";
-    /* grid-template-columns: 1fr;
-    grid-gap: 5px; /* ngasih jarak antar kotak /
-    grid-template-areas: 
-    "photo"
-    "name"
-    "about"
-    "work"
-    "education"
-    "community"
-    "skills"; */
-}
+    padding: 1em; }
 
 .circle {
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 15px;
-}
-
-.resume section {
-    border: 1px solid black;
-    padding: 1em;
-}
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px; }
 
 .name {
-    grid-area: name;
-}
+  grid-area: name; }
 
 .photo {
-    background-color: lightblue;
-    grid-area: photo;
-}
+  background-color: lightblue;
+  grid-area: photo; }
 
 .about {
-    grid-area: about;
-}
+  grid-area: about; }
 
 .work {
-    background-color: lightblue;
-    grid-area: work;
-}
+  background-color: lightblue;
+  grid-area: work; }
 
 .education {
-    grid-area: education;
-}
+  grid-area: education; }
 
 .community {
-    background-color: lightblue;
-    grid-area: community;
-}
+  background-color: lightblue;
+  grid-area: community; }
 
 .skills {
-    grid-area: skills;
-}
+  grid-area: skills; }
 
 @media (min-width: 1200px) {
-    .resume {
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "photo name"
-        "work about"
-        "work education"
-        "community skills";
-    }
-}
-
+  .resume {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "photo name" "work about" "work education" "community skills"; } }
 @media print {
-    /* remove any screen only styles, for example link underline */
-}
-
+  /* remove any screen only styles, for example link underline */ }
 @page {
-    padding: 0;
-    margin: 0cm;
-    size: A4 portrait;
-}
+  padding: 0;
+  margin: 0cm;
+  size: A4 portrait; }
+
+/*# sourceMappingURL=style.css.map */
